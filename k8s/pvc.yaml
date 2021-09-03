@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: {{ .name | defailt 'my-pvc' }}
+  name: {{ .name | default 'my-pvc' }}
 spec:
   accessModes:
     - ReadWriteOnce
