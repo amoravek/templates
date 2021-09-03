@@ -9,5 +9,5 @@ spec:
   resources:
     requests:
       storage: {{ .size | default '100Mi' }}
-  storageClassName: {{ .sc-name | default }}
+  storageClassName: {{ .sc-name | default 'default' }}
 ~          
