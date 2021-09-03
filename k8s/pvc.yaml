@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: {{ .name | default 'my-pvc' }}
+  name: {{ .name | default 'mypvc' }}
 spec:
   accessModes:
     - ReadWriteOnce
@@ -10,4 +10,4 @@ spec:
     requests:
       storage: {{ .size | default '100Mi' }}
   storageClassName: {{ .sc-name | default 'default' }}
-~          
+
